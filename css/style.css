@@ -1,0 +1,411 @@
+
+/* =====================================
+   THE SPICE COURTYARD
+   MAIN STYLESHEET
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --wine: #642C32;
+    --dark: #302021;
+    --cream: #F7F1E8;
+    --gold: #C49A52;
+    --muted: #806F68;
+    --white: #FFFFFF;
+}
+
+body {
+    background: var(--cream);
+    color: var(--dark);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+    background: var(--cream);
+    padding: 27px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dfd3c3;
+}
+
+.logo h1 {
+    font-family: Georgia, serif;
+    font-size: 27px;
+    color: var(--wine);
+    letter-spacing: 2px;
+}
+
+.logo p {
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: var(--muted);
+    margin-top: 4px;
+}
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--dark);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--gold);
+}
+
+/* PAGE INTRO */
+
+.page-intro {
+    text-align: center;
+    padding: 65px 20px 45px;
+}
+
+.page-intro .small-title {
+    color: var(--gold);
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.page-intro h2 {
+    font-family: Georgia, serif;
+    font-size: 43px;
+    color: var(--wine);
+    margin: 12px 0;
+}
+
+.page-intro p {
+    color: var(--muted);
+}
+
+/* HOME HERO */
+
+.hero {
+    min-height: 570px;
+    background:
+        linear-gradient(rgba(28, 15, 14, 0.35),
+        rgba(28, 15, 14, 0.55)),
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1800&q=85");
+
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 8%;
+}
+
+.hero-content {
+    max-width: 650px;
+    color: white;
+}
+
+.hero-content .tagline {
+    color: #E9C887;
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+
+.hero-content h2 {
+    font-family: Georgia, serif;
+    font-size: 65px;
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+.hero-content p {
+    font-size: 17px;
+    max-width: 480px;
+    margin-bottom: 30px;
+}
+
+.main-button {
+    display: inline-block;
+    padding: 14px 30px;
+    background: var(--gold);
+    color: var(--dark);
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.main-button:hover {
+    background: white;
+}
+
+/* HOME INTRODUCTION */
+
+.welcome {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+    padding: 90px 10%;
+}
+
+.welcome img {
+    height: 390px;
+    border-radius: 3px;
+}
+
+.welcome h2 {
+    color: var(--wine);
+    font-family: Georgia, serif;
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+.welcome p {
+    color: var(--muted);
+    margin-bottom: 20px;
+}
+
+.gold-line {
+    width: 65px;
+    height: 3px;
+    background: var(--gold);
+}
+
+/* HIGHLIGHT STRIP */
+
+.highlights {
+    background: var(--wine);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.highlights h3 {
+    color: #E9C887;
+    font-family: Georgia, serif;
+    font-size: 24px;
+}
+
+/* MENU PAGE */
+
+.menu-grid {
+    padding: 10px 7% 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.food-card {
+    background: white;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-6px);
+}
+
+.food-card img {
+    height: 225px;
+}
+
+.food-info {
+    padding: 22px;
+}
+
+.food-info h3 {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    color: var(--wine);
+}
+
+.food-info p {
+    color: var(--muted);
+    font-size: 13px;
+    margin: 9px 0 15px;
+}
+
+.price {
+    color: #A47A32;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* ADMINISTRATION PAGE */
+
+.team-grid {
+    padding: 10px 8% 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.team-card {
+    background: white;
+    text-align: center;
+    padding-bottom: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+.team-card img {
+    height: 290px;
+}
+
+.team-card h3 {
+    color: var(--wine);
+    font-family: Georgia, serif;
+    font-size: 21px;
+    margin-top: 18px;
+}
+
+.team-card p {
+    color: var(--gold);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* CONTACT PAGE */
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 20px 10% 90px;
+}
+
+.contact-details {
+    background: var(--wine);
+    color: white;
+    padding: 45px;
+}
+
+.contact-details h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.contact-item {
+    margin-bottom: 25px;
+}
+
+.contact-item h3 {
+    color: #E9C887;
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.contact-item p {
+    font-size: 14px;
+}
+
+.contact-photo img {
+    height: 100%;
+    min-height: 400px;
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+footer span {
+    color: #E9C887;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 850px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .menu-grid,
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .welcome,
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h2 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .menu-grid,
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 430px;
+    }
+
+    .hero-content h2 {
+        font-size: 38px;
+    }
+
+    .page-intro h2 {
+        font-size: 32px;
+    }
+
+    .welcome {
+        padding: 50px 7%;
+    }
+
+    .highlights {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .contact-details {
+        padding: 25px;
+    }
+}
